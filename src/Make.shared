@@ -134,6 +134,9 @@ SHARED_CORE_SOURCE = \
 	./CoreFoundation/CFUrl.cs                       \
 	./CoreFoundation/CFRunLoop.cs                   \
 	./CoreFoundation/Dispatch.cs                    \
+	./CoreFoundation/CFAllocator.cs			\
+	./CoreFoundation/CFData.cs			\
+	./CoreFoundation/CFIndex.cs			\
 	./CoreGraphics/CGAffineTransform.cs             \
 	./CoreGraphics/CGBitmapContext.cs               \
 	./CoreGraphics/CGColor.cs                       \
