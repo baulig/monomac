@@ -71,13 +71,13 @@
       <HintPath>..\AsyncTests\lib\Mono.Addins.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="MonoMac">
-      <HintPath>..\monomac\src\MonoMac.dll</HintPath>
+      <HintPath>..\..\src\MonoMac.dll</HintPath>
     </Reference>
     <Reference Include="MonoMac.CFNetwork">
-      <HintPath>..\monomac\src\MonoMac.CFNetwork.dll</HintPath>
+      <HintPath>..\..\src\MonoMac.CFNetwork.dll</HintPath>
     </Reference>
-    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindow.cs" />
@@ -178,11 +178,11 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\monomac\samples\CFNetwork\AsyncTests.Framework\AsyncTests.Framework.csproj">
+    <ProjectReference Include="AsyncTests.Framework\AsyncTests.Framework.csproj">
       <Project>{BEC2B807-EF3B-4013-B828-B3BB2AC1620D}</Project>
       <Name>AsyncTests.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\monomac\samples\CFNetwork\AsyncTests.HttpClientTests\AsyncTests.HttpClientTests.csproj">
+    <ProjectReference Include="AsyncTests.HttpClientTests\AsyncTests.HttpClientTests.csproj">
       <Project>{1B0D227D-A57F-4112-B510-7BCA8AE0D114}</Project>
       <Name>AsyncTests.HttpClientTests</Name>
     </ProjectReference>
