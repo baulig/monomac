@@ -6177,7 +6177,7 @@ namespace MonoMac.AppKit {
 		//[Export ("outlineView:toolTipForCell:rect:tableColumn:item:mouseLocation:")]
 		//string ToolTipForCell (NSOutlineView outlineView, NSCell cell, NSRectPointer rect, NSTableColumn tableColumn, NSObject item, PointF mouseLocation);
 	
-		[Export ("outlineView:heightOfRowByItem:")]
+		[Export ("outlineView:heightOfRowByItem:"), NoDefaultImplementation]
 		float GetRowHeight (NSOutlineView outlineView, NSObject item);
 	
 		[Export ("outlineView:typeSelectStringForTableColumn:item:")]
@@ -6195,10 +6195,10 @@ namespace MonoMac.AppKit {
 		[Export ("outlineView:shouldTrackCell:forTableColumn:item:")]
 		bool ShouldTrackCell (NSOutlineView outlineView, NSCell cell, NSTableColumn tableColumn, NSObject item);
 	
-		[Export ("outlineView:dataCellForTableColumn:item:")]
+		[Export ("outlineView:dataCellForTableColumn:item:"), NoDefaultImplementation]
 		NSCell GetCell (NSOutlineView outlineView, NSTableColumn tableColumn, NSObject item);
 
-		[Export ("outlineView:viewForTableColumn:item:")]
+		[Export ("outlineView:viewForTableColumn:item:"), NoDefaultImplementation]
 		NSView GetView (NSOutlineView outlineView, NSTableColumn tableColumn, NSObject item);
 	
 		[Export ("outlineView:isGroupItem:")]
@@ -6213,7 +6213,7 @@ namespace MonoMac.AppKit {
 		[Export ("outlineView:willDisplayOutlineCell:forTableColumn:item:")]
 		void WillDisplayOutlineCell (NSOutlineView outlineView, NSObject cell, NSTableColumn tableColumn, NSObject item);
 	
-		[Export ("outlineView:sizeToFitWidthOfColumn:")]
+		[Export ("outlineView:sizeToFitWidthOfColumn:"), NoDefaultImplementation]
 		float GetSizeToFitColumnWidth (NSOutlineView outlineView, int column);
 	
 		[Export ("outlineView:shouldReorderColumn:toColumn:")]
